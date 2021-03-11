@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1 id="main-header"><strong>TIC-TAC-</strong>TOE</h1>
+        <hr>
+    </header>
+
+    <section>
+        <form class="radio-buttons" id="form">
+            <div class="options">
+                <p>Choose your opponent:</p>
+                <input type="radio" id="opp-human" name="opp" value="human">
+                <label for="opp">Human</label>
+
+                <input type="radio" id="opp-comp" name="opp" value="computer">
+                <label for="opp">Computer</label>
+            </div>
+
+            <div class="options">
+                <p>Choose your sign:</p>
+                <div class="signs">
+                    <div>
+                        <input type="radio" id="sign-x" name="sign" value="X">
+                        <label for="sign">X</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="sign-o" name="sign" value="O">
+                        <label for="sign">O</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <button id="new-game" type="button" form="form" value="Submit">New Game</button>
+
+        <div id="winner"></div>
+        <div id="gameboard"></div>
+
+    </section>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
